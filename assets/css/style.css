@@ -531,9 +531,10 @@ a:hover {
     text-transform: uppercase;
     /*font-family: "Arial Bold";*/
     margin-bottom: 25px;
-    letter-spacing: -8.5px;
+    letter-spacing: -5.5px;
     /*font-family: 'Heebo', sans-serif;*/
     font-family: "Arial Black";
+    transform: scaleY(1.4)
 }
 
 .hero_text h1 span {
