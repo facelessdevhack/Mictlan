@@ -1,0 +1,91 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 1900px) {
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-text h1 {
+    font-size: 45px;
+  }
+  .primary-btn {
+    min-width: auto;
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  nav.navbar.navbar-expand {
+    display: block;
+  }
+
+  .navbar-brand {
+    margin: 0px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .hero-text {
+    padding: 0px 0px 20px;
+  }
+
+  .signup-text h4 {
+    margin-bottom: 5px;
+  }
+
+  .signup-text h2 {
+    font-size: 24px;
+  }
+
+  .mc-field-group input#mce-EMAIL {
+    height: 45px;
+  }
+
+  .mc-field-group input#mc-embedded-subscribe {
+    height: 35px;
+  }
+
+  .navbar-nav {
+    padding: 0px;
+  }
+  .navbar-nav.ml-auto {
+    margin: 0 auto !important;
+  }
+
+  .navbar-brand img {
+    max-width: 200px;
+  }
+  .primary-btn {
+    min-width: auto;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .insta img {
+    max-width: 30px;
+  }
+  nav.navbar.navbar-expand {
+    text-align: center;
+  }
+  br {
+    display: inline;
+    content: "";
+  }
+  .insta {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}

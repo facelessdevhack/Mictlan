@@ -1,0 +1,327 @@
+/* Basic css */
+@font-face {
+    font-family: "Arial";
+    src: url("../fonts/Arial-Black.woff2") format("woff2"),
+      url("../webfonts/Arial-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Azuria";
+    src: url("../fonts/AzuriaRegular.woff2") format("woff2"),
+      url("../fonts/AzuriaRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "SF Compact Display";
+    src: url("../fonts/SFCompactDisplay-Regular.woff2") format("woff2"),
+      url("../fonts/SFCompactDisplay-Regular.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: "SF Compact Display";
+    color: #1d1d1b;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0 0 15px;
+    line-height: 1.2;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  a:focus,
+  input:focus,
+  select:focus,
+  button:focus {
+    outline: 0 solid;
+  }
+  
+  /* Main styles */
+  
+  .video-wrapper {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .main-content {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: relative;
+  }
+  
+  .video-wrapper .cover-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 200; */
+    object-fit: cover;
+    /* opacity: 0; */
+    pointer-events: none;
+  }
+  
+  .navbar-nav {
+    padding-right: 40px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px;
+  }
+  
+  .header {
+    padding: 20px 0px;
+  }
+  
+  .stepper {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    flex-wrap: nowrap;
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .stepper .step {
+    width: 33.333%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .stepper .step .dot {
+    display: inline-block;
+    background-color: #4a5055;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .logo span {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "SFCompactDisplay Regular";
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+.logo {
+    text-align: center;
+}
+  .stepper .step:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    width: 50%;
+    height: 2px;
+    background-color: #4a5055;
+    z-index: -1;
+  }
+  .stepper .step:nth-child(2):after {
+    left: -20px;
+  }
+  
+  .stepper .step:nth-child(2):before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 3px;
+    width: 50%;
+    height: 2px;
+    background-color: #4a5055;
+    z-index: -1;
+  }
+  
+  .stepper .step:nth-child(3):after {
+    left: -12px;
+    right: auto;
+  }
+  
+  .navbar-nav .nav-item .nav-link img {
+    max-width: 30px;
+  }
+  
+  .stepper .step img {
+    max-width: 25px;
+  }
+  .navbar-nav .nav-item .nav-link img {
+    max-width: 30px;
+  }
+  
+  .stepper .step img {
+    max-width: 25px;
+  }
+  .navbar-brand img {
+    max-width: 240px;
+  }
+  
+  .hero-text {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+  }
+  
+  .hero-text h1 {
+    font-size: 60px;
+    font-family: "Arial";
+    font-weight: 900;
+    transform: scaleY(1.5)
+  }
+  
+  .hero-text h1 span {
+    color: #f1a903;
+  }
+  
+  .signup-text {
+    color: white;
+    padding-left: 25px;
+    border-left: 1px solid #f33946;
+    width: 260px;
+    margin: 0 auto;
+  }
+  
+  .signup-text h4 {
+    font-size: 14px;
+    letter-spacing: 9px;
+    font-family: "SF Compact Display";
+    font-weight: 400;
+  }
+  
+  .insta p {
+    color: white;
+    font-size: 15px;
+    font-family: "SF Compact Display";
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  .primary-btn:hover {
+    opacity: 0.9;
+    color: #000;
+  }
+  .primary-btn {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    min-width: 400px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    padding: 0px 20px;
+  }
+  .signup-text h2 {
+    color: #f33946;
+    font-family: "Azuria";
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  
+  .mc-field-group {
+    border-radius: 60px;
+    position: relative;
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .mc-field-group input#mce-EMAIL {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    border: 0px;
+    height: 60px;
+    border-radius: 60px;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  
+  .mc-field-group input#mc-embedded-subscribe {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #000000;
+    font-size: 14px;
+    color: white;
+    border: 0px;
+    min-width: 98px;
+    height: 41px;
+    border-radius: 41px;
+  }
+  .stepper .step:nth-child(3).last:after {
+    left: -20px;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: #000000;
+  }
+  
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000000;
+  }
+  
+  ::placeholder {
+    color: #000000;
+  }
+  .thank-you .hero-text {
+    padding-bottom: 10px;
+  }
+  @media screen and (min-height: 750px) {
+    .thank-you .hero-text {
+      padding-top: 20px;
+      padding-bottom: 100px;
+    }
+    .hero-text {
+      padding-bottom: 120px;
+    }
+  }
+  
