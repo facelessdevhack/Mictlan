@@ -392,6 +392,18 @@ a:hover {
     margin-top: 15px;
     letter-spacing: 3px;
 }
+@media screen and (max-width: 425px) {
+    .logo span{
+        color: #fff;
+        text-transform: uppercase;
+        display: block;
+        font-size: 0.5rem;
+        line-height: 18px;
+        font-family: "SFCompactDisplay Regular";
+        margin-top: 15px;
+        letter-spacing: 3px;
+    }
+}
 .social_profile {
     text-align: center;
 }
@@ -531,12 +543,13 @@ a:hover {
     text-transform: uppercase;
     /*font-family: "Arial Bold";*/
     margin-bottom: 25px;
-    letter-spacing: -5.5px;
+    letter-spacing: -2px;
     /*font-family: 'Heebo', sans-serif;*/
     font-family: "Arial Black";
-    transform: scaleY(1.4)
 }
-
+#myvideo{
+    transform: scaleX(1.12);
+}
 .hero_text h1 span {
     color: #F1A903;
 }
@@ -581,17 +594,17 @@ a:hover {
 }
 
 .submit_btn {
-    position: absolute !important;
-    top: 13px !important;
-    right: 18px !important;
-    background: #000 !important;
-    color: #fff !important;
-    border: none !important;
-    font-size: 14px !important;
-    font-family: "SFCompactDisplay Regular" !important;
-    letter-spacing: 3px !important;
-    padding: 15px 30px !important;
-    border-radius: 50px !important;
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-family: "SFCompactDisplay Regular";
+    letter-spacing: 3px;
+    padding: 15px 30px;
+    border-radius: 50px;
 }
 
 .newsletter_form {
